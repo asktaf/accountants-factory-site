@@ -24,6 +24,49 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Jost", sans-serif;
 }
 
+.list-group-item.active
+{
+  background-color: #076F61;
+}
+
+li { cursor: pointer; }
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel-control-prev {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+
+.carousel-control-next {
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+
+.carousel-indicators
+{
+  filter: invert(100%);
+  align-items: flex-end;
+  bottom: -30%;
+}
+
+.carousel-inner
+{
+  padding-left: 10%;
+  padding-right: 5%;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -99,6 +142,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #076F61;
   color: #fff;
 }
+
 
 /*--------------------------------------------------------------
 # Header
@@ -879,11 +923,12 @@ section {
 .contact .info {
   border-top: 3px solid #076F61;
   /*border-bottom: 3px solid #47b2e4; */
-  padding: 30px;
+  padding: 20px;
   background: #fff;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
+
 
 .contact .info i {
   font-size: 20px;
@@ -947,14 +992,13 @@ section {
   color: #fff;
 }
 
-.contact .form-spre {
+/*.contact .form-spre {
   width: 100%;
   border-top: 3px solid #076F61;
-  /* border-bottom: 3px solid #47b2e4;*/
   padding: 30px;
   background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-}
+}*/
 
 .contact .form-spre .form-group {
   padding-bottom: 8px;
